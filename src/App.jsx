@@ -14,7 +14,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path='/Movies_App' element={<Home />} />
           <Route path="/details/:id" element={<Details />} />
+          <Route path='Movies_App/details/:id' element={<Details />} />
+
         </Routes>
       
       
