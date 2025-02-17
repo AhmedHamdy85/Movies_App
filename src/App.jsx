@@ -11,12 +11,10 @@ function App() {
   return (
     <>
     
-      <BrowserRouter>
+      <BrowserRouter basename='/Movies_App'>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path='/Movies_App' element={<Home />} />
           <Route path="/details/:id" element={<Details />} />
-          <Route path='Movies_App/details/:id' element={<Details />} />
 
         </Routes>
       
