@@ -17,7 +17,7 @@ function App() {
       <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path ="//favoret" element={<Favoret />} />
+          <Route path ="/favoret" element={<Favoret />} />
           <Route path="/details/:id" element={<Details />} />
           <Route path="*" element={<h1>NotFound</h1>} />
 
