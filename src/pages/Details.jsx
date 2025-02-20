@@ -3,12 +3,11 @@ import NavBar from "../componant/NavBar";
 
 export default function Details() {
     return (
-   <>
-   <NavBar />
+ 
     <div className='mt-12'>
         
-   <MovieDetailsCard />
+   <MovieDetailsCard  />
     </div>
-   </>
+
     );
 }

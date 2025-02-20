@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Details from './pages/Details'
 import Favoret from './pages/Favoret'
+import NavBar from './componant/NavBar'
 
 function App() {
 
@@ -13,10 +14,12 @@ function App() {
     <>
     
       <BrowserRouter basename='/Movies_App'>
+      <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path ="//favoret" element={<Favoret />} />
           <Route path="/details/:id" element={<Details />} />
+          <Route path="*" element={<h1>NotFound</h1>} />
 
         </Routes>
       
